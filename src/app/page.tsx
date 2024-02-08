@@ -65,12 +65,28 @@ export default function HomePage() {
           </article>
 
           <div className="mt-8 flex items-center justify-center gap-6">
-            <RiMailLine size={25} />
-            <RiGitlabLine size={25} />
-            <RiLinkedinLine size={25} />
-            <RiInstagramLine size={25} />
-            <RiWhatsappLine size={25} />
-            <RiGithubLine size={25} />
+            <a href="mailto:mvaezi.com@gmail.com" target="_blank">
+              <RiMailLine size={25} />
+            </a>
+            <a href="https://gitlab.com/mvaezi" target="_blank">
+              <RiGitlabLine size={25} />
+            </a>
+            <a href="https://github.com/mehdivaezi" target="_blank">
+              <RiGithubLine size={25} />
+            </a>
+            <a href="https://www.linkedin.com/in/mvaezi/" target="_blank">
+              <RiLinkedinLine size={25} />
+            </a>
+            <a href="https://www.instagram.com/_mvaezi/" target="_blank">
+              <RiInstagramLine size={25} />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=16282454637&text=Hello%2C%20I%20am%20sending%20a%20message%20through%20your%20site"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <RiWhatsappLine size="25" />
+            </a>
           </div>
         </div>
         <AnimateBgSectionPage />
