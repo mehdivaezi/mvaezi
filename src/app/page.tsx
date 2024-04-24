@@ -1,13 +1,10 @@
 'use client';
 import Image from 'next/image';
-import LoadingSplash from '@/components/intro/LoadingSplash';
 import AnimateBgSectionPage from '@/components/AnimateBgSection';
 import { TypeAnimation } from 'react-type-animation';
-import { useState } from 'react';
 import {
-  RiGameLine,
+  RiFilePdf2Line,
   RiGithubLine,
-  RiGitlabFill,
   RiGitlabLine,
   RiInstagramLine,
   RiLinkedinLine,
@@ -15,7 +12,6 @@ import {
   RiWhatsappLine
 } from 'react-icons/ri';
 export default function HomePage() {
-  const [, setTypingStatus] = useState('Initializing');
   return (
     <div className="px-4">
       <section className="flex h-full min-h-screen items-center justify-center">
@@ -86,6 +82,9 @@ export default function HomePage() {
               rel="nofollow noopener"
             >
               <RiWhatsappLine size="25" />
+            </a>
+            <a href="/mvaezi--Mehdi-Vaezi-CV.pdf" target="_blank">
+              <RiFilePdf2Line size="25" />
             </a>
           </div>
         </div>
