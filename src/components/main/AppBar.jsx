@@ -25,9 +25,9 @@ export function AppBar() {
   };
 
   return (
-    <header className="unicorn:bg-accent/10 light:text-primary unicorn:text-accent light:bg-black/10 fixed inset-x-0 top-0 z-20 mx-auto flex h-20 w-full max-w-5xl items-center justify-center gap-8 rounded-b-full backdrop-blur-lg dark:bg-white/10 dark:text-white">
+    <header className="fixed inset-x-0 top-0 z-20 mx-auto flex h-20 w-full max-w-5xl items-center justify-center gap-8 rounded-b-full backdrop-blur-lg light:bg-black/10 light:text-primary unicorn:bg-accent/10 unicorn:text-accent dark:bg-white/10 dark:text-white">
       <Link href="#">Projects</Link>
-      <button onClick={onChangeTheme}>{themes[themeSelectIndex].icon}</button>
+      {themes[themeSelectIndex] && <button onClick={onChangeTheme}>{themes[themeSelectIndex].icon}</button>}
       <Link href="#">Contact</Link>
     </header>
   );
